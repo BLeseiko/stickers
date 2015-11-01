@@ -1,0 +1,14 @@
+<form  name="stickerform" class="css-form" novalidate>
+	<div class="modal-form-fields">
+		<div class="sticker-title">
+			<input type="text" placeholder="Title" name="title" ng-model="newSticker.title" ng-required="true" />
+		</div>
+		<div beauty-upload>
+			<input type="file" name="file" filereader-upload />
+		</div>
+	</div>
+	<footer class="modal-controls">
+		<input type="submit" class="button button-small" value="Add Sticker" ng-click="add()" ng-disabled="!stickerform.$valid || !fileSelected" />
+		<input type="button" class="button button-small" ng-click="close()" value="Close" />
+	</footer>
+</form>

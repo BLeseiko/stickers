@@ -1,0 +1,26 @@
+.button{
+	cursor: pointer;
+	display: inline-block;
+	color: $white;
+	font-size: 22px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px;
+	border: none;
+	background-color: $tomato;
+	transition: all 0.2s ease-in;
+	outline: none;
+	min-width: 50px;
+	
+	&:hover{
+		background-color: $turquoise;
+	}
+
+	&:disabled{
+		background-color: $dark;
+	}
+}
+
+.button-small{
+	font-size: 10px;
+}

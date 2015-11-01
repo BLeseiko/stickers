@@ -1,0 +1,14 @@
+<div ng-controller="PhotosCtrl" ng-class="{
+	'photo-not-loaded': initialState,
+	'photo-loaded': !initialState
+}">
+	<div class="upload-holder" ng-if="initialState" beauty-upload>
+		<input type="file" filereader-upload/>
+	</div>
+	<div class="photo-holder" ng-if="!initialState">
+		<button class="button icon-refresh" ng-click="startOver()"></button>
+		<div class="photo-container">
+			<img-previewer datauri="dataURI" isddtarget="true"></img-previewer>
+		</div>
+	</div>
+</div>

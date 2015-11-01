@@ -1,0 +1,19 @@
+.file-upload-container 
+{
+	display: block;
+	width: auto;
+	font-size: 16px;
+
+	input[type='file']{
+		display: none;
+		visibility: hidden;
+		position: absolute;
+		left: -9999px;
+	}
+
+
+	.file-upload-button
+	{
+		padding: 20px 40px;
+	}
+}

@@ -1,0 +1,10 @@
+<div ng-controller="StickersCtrl" class="stickers-holder">
+	<button class="button button-small" ng-click="showAddModal()">Upload new sticker</button>
+	<div class="stickers-list">
+		<div class="sticker" ng-repeat="sticker in stickers">
+			<img-previewer datauri="sticker.dataURI" width="150" height="150" isddtarget="false"></img-previewer>
+			<button class="button icon-cross" ng-click="removeSticker($index)"></button>
+			<span class="sticker-title" ng-bind-html="sticker.title"></span>
+		</div>
+	</div>
+</div>

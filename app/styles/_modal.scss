@@ -1,0 +1,59 @@
+.modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 1;
+	display: flex !important;
+	justify-content: center;
+	color: $dark-grey;
+
+	.modal-dialog{
+		transform: translate(0,0);
+		width: 300px;
+		margin: 30px auto;
+		align-self: center;
+
+		.modal-form-fields{
+			.sticker-title input{
+				width: 298px;
+				font-size: 29px;
+				border: none;
+			}
+
+			.file-upload-container{
+				padding-top: 10px;
+
+				.button{
+					font-size: 14px;
+					padding: 10px;
+					width: 100%;
+				}
+			}
+
+		}
+
+		.modal-controls{
+			padding-top: 20px;
+			text-align: right;
+		}
+	}
+}
+
+.modal-backdrop{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: $dark-grey;
+
+	&.fade{
+		opacity: 0;
+	}
+
+	&.in{
+		opacity: 1;
+	}
+}

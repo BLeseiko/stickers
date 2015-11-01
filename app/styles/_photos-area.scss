@@ -1,0 +1,15 @@
+.photo-area{
+	flex: 2 1 auto;
+	display: flex;
+	justify-content: center;
+
+	.photo-not-loaded{
+	  align-self: center;
+	  text-align: center;
+	}
+
+	.photo-loaded{
+		width: 100%;
+		padding: 10px;
+	}
+}

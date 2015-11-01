@@ -1,0 +1,32 @@
+@import "../bower_components/normalize-scss/_normalize";
+@import "_icon-fonts";
+@import "_colors";
+
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+html,
+body,
+.application{
+  height: 100%;
+}
+
+body{
+  background-color: $dark-grey;
+}
+
+.workspace{
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+}
+
+@import "_button";
+@import "_modal";
+@import "_dd-styling";
+@import "_img-previewer";
+@import "_photos-area";
+@import "_stickers-area";
+@import "_file-upload";
